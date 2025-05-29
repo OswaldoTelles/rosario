@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosário App v2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div id="app-container">
+        <div id="selecao-modo" class="visible">
+            <h2>Escolha o modo:</h2>
+            <button id="btn-terco">Rezar o Terço do Dia</button>
+            <button id="btn-rosario">Rezar o Rosário Completo</button>
+            <div id="selecao-misterio-terco" class="hidden">
+                <h3>Qual mistério deseja rezar?</h3>
+                <button data-misterio="gozosos">Gozosos (Seg/Sáb)</button>
+                <button data-misterio="luminosos">Luminosos (Qui)</button>
+                <button data-misterio="dolorosos">Dolorosos (Ter/Sex)</button>
+                <button data-misterio="gloriosos">Gloriosos (Qua/Dom)</button>
+            </div>
+        </div>
+
+        <div id="oracao-container" class="hidden">
+            <div id="misterio-atual"></div>
+            <div id="progresso-container">
+                <!-- Barras de progresso serão adicionadas aqui pelo JS -->
+            </div>
+            <div id="oracao-atual">
+                <p id="oracao-texto"></p>
+                <small id="oracao-info"></small>
+            </div>
+            <div id="controle-toque"></div>
+        </div>
+    </div>
+
+    <script src="rosario_data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
