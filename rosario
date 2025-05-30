@@ -1,0 +1,6 @@
+git clone https://github.com/SEU_USUARIO/rosario-app.git
+cd rosario-app
+# Copie os arquivos do app aqui
+git add .
+git commit -m "Publicação do App Rosário"
+git push origin main
